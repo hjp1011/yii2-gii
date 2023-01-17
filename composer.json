@@ -1,5 +1,5 @@
 {
-    "name": "yiisoft/yii2-gii",
+    "name": "hjp1011/yii2-gii",
     "description": "The Gii extension for the Yii framework",
     "keywords": [
         "yii2",
@@ -9,16 +9,15 @@
     "type": "yii2-extension",
     "license": "BSD-3-Clause",
     "support": {
-        "issues": "https://github.com/yiisoft/yii2-gii/issues",
+        "issues": "https://github.com/hjp1011/yii2-gii/issues",
         "forum": "http://www.yiiframework.com/forum/",
         "wiki": "http://www.yiiframework.com/wiki/",
         "irc": "irc://irc.freenode.net/yii",
-        "source": "https://github.com/yiisoft/yii2-gii"
+        "source": "https://github.com/hjp1011/yii2-gii"
     },
     "authors": [
         {
-            "name": "Qiang Xue",
-            "email": "qiang.xue@gmail.com"
+            "name": "hjp1011",
         }
     ],
     "minimum-stability": "dev",
@@ -32,7 +31,7 @@
     },
     "autoload": {
         "psr-4": {
-            "yii\\gii\\": "src"
+            "yiiframe\\gii\\": "src"
         }
     },
     "autoload-dev": {
