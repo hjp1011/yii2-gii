@@ -13,9 +13,7 @@ For license information check the [LICENSE](LICENSE.md)-file.
 
 Documentation is at [docs/guide/README.md](docs/guide/README.md).
 
-[![Latest Stable Version](https://poser.pugx.org/hjp1011/yii2-gii/v/stable.png)](https://packagist.org/packages/hjp1011/yii2-gii)
-[![Total Downloads](https://poser.pugx.org/hjp1011/yii2-gii/downloads.png)](https://packagist.org/packages/hjp1011/yii2-gii)
-[![Build Status](https://travis-ci.com/hjp1011/yii2-gii.svg?branch=master)](https://travis-ci.com/hjp1011/yii2-gii)
+[![Latest Stable Version](http://poser.pugx.org/hjp1011/yii2-gii/v)](https://packagist.org/packages/hjp1011/yii2-gii) [![Total Downloads](http://poser.pugx.org/hjp1011/yii2-gii/downloads)](https://packagist.org/packages/hjp1011/yii2-gii) [![Latest Unstable Version](http://poser.pugx.org/hjp1011/yii2-gii/v/unstable)](https://packagist.org/packages/hjp1011/yii2-gii) [![License](http://poser.pugx.org/hjp1011/yii2-gii/license)](https://packagist.org/packages/hjp1011/yii2-gii) [![PHP Version Require](http://poser.pugx.org/hjp1011/yii2-gii/require/php)](https://packagist.org/packages/hjp1011/yii2-gii)
 
 
 Installation
