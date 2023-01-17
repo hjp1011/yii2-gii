@@ -20,11 +20,11 @@ class DefaultController extends Controller
 {
     public $layout = 'generator';
     /**
-     * @var \yii\gii\Module
+     * @var \yiiframe\gii\Module
      */
     public $module;
     /**
-     * @var \yii\gii\Generator
+     * @var \yiiframe\gii\Generator
      */
     public $generator;
 
@@ -126,7 +126,7 @@ class DefaultController extends Controller
     /**
      * Loads the generator with the specified ID.
      * @param string $id the ID of the generator to be loaded.
-     * @return \yii\gii\Generator the loaded generator
+     * @return \yiiframe\gii\Generator the loaded generator
      * @throws NotFoundHttpException
      */
     protected function loadGenerator($id)

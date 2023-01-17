@@ -9,7 +9,7 @@ namespace yiiframe\gii\generators\form;
 
 use Yii;
 use yii\base\Model;
-use yii\gii\CodeFile;
+use yiiframe\gii\CodeFile;
 
 /**
  * This generator will generate an action view file based on the specified model class.
@@ -19,7 +19,7 @@ use yii\gii\CodeFile;
  * @author Qiang Xue <qiang.xue@gmail.com>
  * @since 2.0
  */
-class Generator extends \yii\gii\Generator
+class Generator extends \yiiframe\gii\Generator
 {
     public $modelClass;
     public $viewPath = '@app/views';

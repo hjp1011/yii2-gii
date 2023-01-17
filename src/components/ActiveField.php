@@ -7,7 +7,7 @@
 
 namespace yiiframe\gii\components;
 
-use yii\gii\Generator;
+use yiiframe\gii\Generator;
 use yii\helpers\ArrayHelper;
 use yii\helpers\Html;
 

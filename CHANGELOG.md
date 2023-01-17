@@ -33,7 +33,7 @@ Yii Framework 2 gii extension Change Log
 - Enh #390, Bug #260: Create (bootstrap)-independent version (simialbi)
 - Bug #386: Move "Create" button outside of pjax container to avoid redirect (alexkart)
 - Bug #398, #397: Use strict mode when generating view folder name (machour)
-- Enh #395: Made `yii\gii\CodeFile` independent of controller context, do not apply `$newDirMode` and `$newFileMode` if module is not available (CeBe)
+- Enh #395: Made `yiiframe\gii\CodeFile` independent of controller context, do not apply `$newDirMode` and `$newFileMode` if module is not available (CeBe)
 - Enh #399: Option to allow singularize class names in model generator (alexkart)
 
 
@@ -94,9 +94,9 @@ Yii Framework 2 gii extension Change Log
 - Enh #293: Do not generate redundant `else` after `return` (bscheshirwork)
 - Enh #295: Allowed to use aliases in generator's templates (dmirogin)
 - Enh #300: Removed space from commented out code so when uncommenting in IDEs there's no extra spacing (bscheshirwork)
-- Enh #315: Make `yii\gii\generators\model\Generator` `generateProperties` protected (claudejanz)
+- Enh #315: Make `yiiframe\gii\generators\model\Generator` `generateProperties` protected (claudejanz)
 - Enh #319: Added `@throws` tags for 404 exceptions in CRUD actions (and800)
-- Enh: `yii\gii\Module::defaultVersion()` implemented to pick up 'yiisoft/yii2-gii' extension version (klimov-paul)
+- Enh: `yiiframe\gii\Module::defaultVersion()` implemented to pick up 'yiisoft/yii2-gii' extension version (klimov-paul)
 - Chg #246: Changed the way CRUD generator translates "Update X id". Now it's a whole string because of translation difficulties  (bscheshirwork)
 
 
@@ -149,7 +149,7 @@ Yii Framework 2 gii extension Change Log
 
 - Bug #5070: Gii controller generator should use controller class name instead of controller ID to specify new controller (qiangxue)
 - Bug #5745: Gii and debug modules may cause 404 exception when the route contains dashes (qiangxue)
-- Bug #6367: Added `yii\gii\generators\crud\Generator` to support customizing view path for the generated CRUD controller (qiangxue)
+- Bug #6367: Added `yiiframe\gii\generators\crud\Generator` to support customizing view path for the generated CRUD controller (qiangxue)
 - Bug: Gii console command help information does not contain global options (qiangxue)
 - Enh #5613: Added `--overwrite` option to Gii console command to support overwriting all files (motin, qiangxue)
 
