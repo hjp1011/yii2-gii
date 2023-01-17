@@ -5,7 +5,7 @@
  * @license http://www.yiiframework.com/license/
  */
 
-namespace yii\gii\console;
+namespace yiiframe\gii\console;
 
 use yii\helpers\Console;
 

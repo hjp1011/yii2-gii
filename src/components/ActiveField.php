@@ -5,7 +5,7 @@
  * @license http://www.yiiframework.com/license/
  */
 
-namespace yii\gii\components;
+namespace yiiframe\gii\components;
 
 use yii\gii\Generator;
 use yii\helpers\ArrayHelper;
