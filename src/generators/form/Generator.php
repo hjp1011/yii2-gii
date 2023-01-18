@@ -32,7 +32,7 @@ class Generator extends \yiiframe\gii\Generator
      */
     public function getName()
     {
-        return 'Form Generator';
+        return Yii::t('app','表单生成器');
     }
 
     /**
@@ -40,7 +40,7 @@ class Generator extends \yiiframe\gii\Generator
      */
     public function getDescription()
     {
-        return 'This generator generates a view script file that displays a form to collect input for the specified model class.';
+        return Yii::t('app','此生成器生成一个视图脚本文件，该文件显示用于收集指定模型类输入的表单。');
     }
 
     /**
@@ -82,10 +82,10 @@ class Generator extends \yiiframe\gii\Generator
     public function attributeLabels()
     {
         return array_merge(parent::attributeLabels(), [
-            'modelClass' => 'Model Class',
-            'viewName' => 'View Name',
-            'viewPath' => 'View Path',
-            'scenarioName' => 'Scenario',
+            'modelClass' => Yii::t('app','模型类'),
+            'viewName' => Yii::t('app','视图名称'),
+            'viewPath' => Yii::t('app','视图路径'),
+            'scenarioName' => Yii::t('app','场景'),
         ]);
     }
 
@@ -111,10 +111,10 @@ class Generator extends \yiiframe\gii\Generator
     public function hints()
     {
         return array_merge(parent::hints(), [
-            'modelClass' => 'This is the model class for collecting the form input. You should provide a fully qualified class name, e.g., <code>app\models\Post</code>.',
-            'viewName' => 'This is the view name with respect to the view path. For example, <code>site/index</code> would generate a <code>site/index.php</code> view file under the view path.',
-            'viewPath' => 'This is the root view path to keep the generated view files. You may provide either a directory or a path alias, e.g., <code>@app/views</code>.',
-            'scenarioName' => 'This is the scenario to be used by the model when collecting the form input. If empty, the default scenario will be used.',
+            'modelClass' => Yii::t('app','这是用于收集表单输入的模型类。你应该提供一个完全限定的类名，例如，<code>app\models\Post</code>。'),
+            'viewName' => Yii::t('app','这是关于视图路径的视图名。例如，<code>site/index</code>将在视图路径下生成一个<code>site/index.php</code>视图文件。'),
+            'viewPath' => Yii::t('app','这是根视图路径，用于保存生成的视图文件。你可以提供一个目录或路径别名，例如，<code>@app/views</code>。'),
+            'scenarioName' => Yii::t('app','这是模型在收集表单输入时使用的场景。如果为空，则使用默认场景。'),
         ]);
     }
 

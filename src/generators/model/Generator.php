@@ -53,7 +53,7 @@ class Generator extends \yiiframe\gii\Generator
      */
     public function getName()
     {
-        return 'Model Generator';
+        return Yii::t('app','模型生成器');
     }
 
     /**
@@ -61,7 +61,7 @@ class Generator extends \yiiframe\gii\Generator
      */
     public function getDescription()
     {
-        return 'This generator generates an ActiveRecord class for the specified database table.';
+        return Yii::t('app','这个生成器为指定的数据库表生成一个ActiveRecord类。');
     }
 
     /**
@@ -96,21 +96,24 @@ class Generator extends \yiiframe\gii\Generator
     public function attributeLabels()
     {
         return array_merge(parent::attributeLabels(), [
-            'ns' => 'Namespace',
-            'db' => 'Database Connection ID',
-            'tableName' => 'Table Name',
-            'standardizeCapitals' => 'Standardize Capitals',
-            'singularize' => 'Singularize',
-            'modelClass' => 'Model Class Name',
-            'baseClass' => 'Base Class',
-            'generateRelations' => 'Generate Relations',
-            'generateRelationsFromCurrentSchema' => 'Generate Relations from Current Schema',
-            'generateLabelsFromComments' => 'Generate Labels from DB Comments',
-            'generateQuery' => 'Generate ActiveQuery',
-            'queryNs' => 'ActiveQuery Namespace',
-            'queryClass' => 'ActiveQuery Class',
-            'queryBaseClass' => 'ActiveQuery Base Class',
-            'useSchemaName' => 'Use Schema Name',
+            'ns' => Yii::t('app','名称空间'),
+            'db' => Yii::t('app','数据库连接ID'),
+            'tableName' => Yii::t('app','表名'),
+            'standardizeCapitals' => Yii::t('app','标准化命名'),
+            'singularize' => Yii::t('app','奇异化'),
+            'modelClass' => Yii::t('app','类名'),
+            'baseClass' => Yii::t('app','基类'),
+            'generateRelations' => Yii::t('app','生成关系'),
+            'generateRelationsFromCurrentSchema' => Yii::t('app','从当前模式生成关系'),
+            'generateLabelsFromComments' => Yii::t('app','从DB注释生成标签'),
+            'generateQuery' => Yii::t('app','生成ActiveQuery'),
+            'queryNs' => Yii::t('app','ActiveQuery名称空间'),
+            'queryClass' => Yii::t('app','ActiveQuery类'),
+            'queryBaseClass' => Yii::t('app','ActiveQuery基类'),
+            'useSchemaName' => Yii::t('app','使用模式名称'),
+            'useTablePrefix' => Yii::t('app','使用表前缀'),
+
+            
         ]);
     }
 
@@ -120,43 +123,22 @@ class Generator extends \yiiframe\gii\Generator
     public function hints()
     {
         return array_merge(parent::hints(), [
-            'ns' => 'This is the namespace of the ActiveRecord class to be generated, e.g., <code>app\models</code>',
-            'db' => 'This is the ID of the DB application component.',
-            'tableName' => 'This is the name of the DB table that the new ActiveRecord class is associated with, e.g. <code>post</code>.
-                The table name may consist of the DB schema part if needed, e.g. <code>public.post</code>.
-                The table name may end with asterisk to match multiple table names, e.g. <code>tbl_*</code>
-                will match tables who name starts with <code>tbl_</code>. In this case, multiple ActiveRecord classes
-                will be generated, one for each matching table name; and the class names will be generated from
-                the matching characters. For example, table <code>tbl_post</code> will generate <code>Post</code>
-                class.',
-            'modelClass' => 'This is the name of the ActiveRecord class to be generated. The class name should not contain
-                the namespace part as it is specified in "Namespace". You do not need to specify the class name
-                if "Table Name" ends with asterisk, in which case multiple ActiveRecord classes will be generated.',
-            'standardizeCapitals' => 'This indicates whether the generated class names should have standardized capitals. For example,
-            table names like <code>SOME_TABLE</code> or <code>Other_Table</code> will have class names <code>SomeTable</code>
-            and <code>OtherTable</code>, respectively. If not checked, the same tables will have class names <code>SOMETABLE</code>
-            and <code>OtherTable</code> instead.',
-            'singularize' => 'This indicates whether the generated class names should be singularized. For example,
-            table names like <code>some_tables</code> will have class names <code>SomeTable</code>.',
-            'baseClass' => 'This is the base class of the new ActiveRecord class. It should be a fully qualified namespaced class name.',
-            'generateRelations' => 'This indicates whether the generator should generate relations based on
-                foreign key constraints it detects in the database. Note that if your database contains too many tables,
-                you may want to uncheck this option to accelerate the code generation process.',
-            'generateRelationsFromCurrentSchema' => 'This indicates whether the generator should generate relations from current schema or from all available schemas.',
-            'generateLabelsFromComments' => 'This indicates whether the generator should generate attribute labels
-                by using the comments of the corresponding DB columns.',
-            'useTablePrefix' => 'This indicates whether the table name returned by the generated ActiveRecord class
-                should consider the <code>tablePrefix</code> setting of the DB connection. For example, if the
-                table name is <code>tbl_post</code> and <code>tablePrefix=tbl_</code>, the ActiveRecord class
-                will return the table name as <code>{{%post}}</code>.',
-            'useSchemaName' => 'This indicates whether to include the schema name in the ActiveRecord class
-                when it\'s auto generated. Only non default schema would be used.',
-            'generateQuery' => 'This indicates whether to generate ActiveQuery for the ActiveRecord class.',
-            'queryNs' => 'This is the namespace of the ActiveQuery class to be generated, e.g., <code>app\models</code>',
-            'queryClass' => 'This is the name of the ActiveQuery class to be generated. The class name should not contain
-                the namespace part as it is specified in "ActiveQuery Namespace". You do not need to specify the class name
-                if "Table Name" ends with asterisk, in which case multiple ActiveQuery classes will be generated.',
-            'queryBaseClass' => 'This is the base class of the new ActiveQuery class. It should be a fully qualified namespaced class name.',
+            'ns' => Yii::t('app','这是要生成的ActiveRecord类的命名空间，例如，<code>app\models</code>'),
+            'db' => Yii::t('app','这是DB应用程序组件的ID。'),
+            'tableName' => Yii::t('app','这是与新的ActiveRecord类相关联的DB表的名称，例如post。表名可以由数据库模式部分组成，如<code>public.post</code>。表名可以以星号结尾以匹配多个表名，例如<code>tbl_*</code>将匹配名称以<code>tbl_</code>开头的表。在这种情况下，将生成多个ActiveRecord类，每个匹配的表名对应一个;类名将由匹配的字符生成。例如，表<code>tbl_post</code>将生成<code>Post</code>类。'),
+            'modelClass' => Yii::t('app','这是要生成的ActiveRecord类的名称。类名不应该包含命名空间部分，因为它在“namespace”中指定。如果“TableName”以星号结尾，则不需要指定类名，在这种情况下将生成多个ActiveRecord类。'),
+            'standardizeCapitals' => Yii::t('app','这表明生成的类名是否应该具有标准化的大写字母。例如，<code>SOME_TABLE</code>或<code>Other_Table</code>这样的表名将分别具有类名<code>SomeTable</code>和<code>OtherTable</code>。如果不勾选，相同的表将有类名<code>SOMETABLE</code>和<code>OtherTable</code>。'),
+            'singularize' => Yii::t('app','这表明生成的类名是否应该被奇异化。例如,像<code>some_tables</code>这样的表名将具有类名<code>SomeTable</code>。'),
+            'baseClass' => Yii::t('app','这是新的ActiveRecord类的基类。它应该是一个完全限定的名称空间类名。'),
+            'generateRelations' => Yii::t('app','这表明生成器是否应该根据它在数据库中检测到的外键约束生成关系。注意，如果数据库包含太多表，您可能希望取消选中此选项以加速代码生成过程。'),
+            'generateRelationsFromCurrentSchema' => Yii::t('app','这表明生成器应该从当前模式还是从所有可用模式生成关系。'),
+            'generateLabelsFromComments' => Yii::t('app','这表明生成器是否应该使用相应DB列的注释来生成属性标签。'),
+            'useTablePrefix' => Yii::t('app','指示生成的ActiveRecord类返回的表名应该考虑DB连接的<code>tablePrefix</code>设置。例如，如果表名称是<code>tbl_post</code>和<code>tablePrefix=tbl_</code>， ActiveRecord类将返回表名为<code>{{%post}}</code>。'),
+            'useSchemaName' => Yii::t('app','这指示是否在自动生成的ActiveRecord类中包含模式名。只能使用非默认模式。'),
+            'generateQuery' => Yii::t('app','是否为ActiveRecord类生成ActiveQuery。'),
+            'queryNs' => Yii::t('app','这是要生成的ActiveQuery类的命名空间，例如:<code>app\models</code>'),
+            'queryClass' => Yii::t('app','这是要生成的ActiveQuery类的名称。类名不应该包含命名空间部分，因为它在“ActiveQuery命名空间”中指定。如果“Table name”以星号结尾，则不需要指定类名，将生成多个ActiveQuery类。'),
+            'queryBaseClass' => Yii::t('app','这是新ActiveQuery类的基类。它应该是一个完全限定的名称空间类名。'),
         ]);
     }
 

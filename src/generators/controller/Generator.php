@@ -50,7 +50,7 @@ class Generator extends \yiiframe\gii\Generator
      */
     public function getName()
     {
-        return 'Controller Generator';
+        return Yii::t('app', '控制器生成器');
     }
 
     /**
@@ -58,8 +58,7 @@ class Generator extends \yiiframe\gii\Generator
      */
     public function getDescription()
     {
-        return 'This generator helps you to quickly generate a new controller class with
-            one or several controller actions and their corresponding views.';
+        return Yii::t('app','这个生成器帮助您快速生成一个新的控制器类，其中包含一个或多个控制器动作及其相应的视图。');
     }
 
     /**
@@ -84,10 +83,10 @@ class Generator extends \yiiframe\gii\Generator
     public function attributeLabels()
     {
         return [
-            'baseClass' => 'Base Class',
-            'controllerClass' => 'Controller Class',
-            'viewPath' => 'View Path',
-            'actions' => 'Action IDs',
+            'baseClass' => Yii::t('app','基类'),
+            'controllerClass' => Yii::t('app','控制器类'),
+            'viewPath' => Yii::t('app','视图路径'),
+            'actions' => Yii::t('app','动作ID'),
         ];
     }
 
@@ -116,20 +115,10 @@ class Generator extends \yiiframe\gii\Generator
     public function hints()
     {
         return [
-            'controllerClass' => 'This is the name of the controller class to be generated. You should
-                provide a fully qualified namespaced class (e.g. <code>app\controllers\PostController</code>),
-                and class name should be in CamelCase ending with the word <code>Controller</code>. Make sure the class
-                is using the same namespace as specified by your application\'s controllerNamespace property.',
-            'actions' => 'Provide one or multiple action IDs to generate empty action method(s) in the controller. Separate multiple action IDs with commas or spaces.
-                Action IDs should be in lower case. For example:
-                <ul>
-                    <li><code>index</code> generates <code>actionIndex()</code></li>
-                    <li><code>create-order</code> generates <code>actionCreateOrder()</code></li>
-                </ul>',
-            'viewPath' => 'Specify the directory for storing the view scripts for the controller. You may use path alias here, e.g.,
-                <code>/var/www/basic/controllers/views/order</code>, <code>@app/views/order</code>. If not set, it will default
-                to <code>@app/views/ControllerID</code>',
-            'baseClass' => 'This is the class that the new controller class will extend from. Please make sure the class exists and can be autoloaded.',
+            'controllerClass' => Yii::t('app','这是要生成的控制器类的名称。你应该提供一个完全限定的命名空间类(例如<code>app\controllers\PostController</code>)，并且类名应该在CamelCase中以单词<code>Controller</code>结尾。确保类使用的名称空间与应用程序的controllerNamespace属性指定的名称空间相同。'),
+            'actions' => Yii::t('app','提供一个或多个动作id在控制器中生成空的动作方法。用逗号或空格分隔多个动作id。动作id应该小写。例如:<ul><li><code>index</code>生成<code>actionIndex()</code></li><li><code>create-order</code> generated <code>actionCreateOrder()</code></li></ul >'),
+            'viewPath' => Yii::t('app','指定存储控制器视图脚本的目录。您可以在这里使用路径别名，例如，<code>/var/www/basic/controllers/views/post</code>,<code>@app/views/post</code>。如果未设置，将默认设置<code>@app/views/ControllerID</code>'),
+            'baseClass' => Yii::t('app','这是新控制器类将从其扩展的类。请确保该类存在并且可以自动加载'),
         ];
     }
 

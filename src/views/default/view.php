@@ -47,14 +47,14 @@ foreach ($generator->templates as $name => $path) {
                 ]) ?>
                 <?= $form->field($generator, 'template')
                     ->sticky()
-                    ->hint('Please select which set of the templates should be used to generated the code.')
-                    ->label('Code Template')
+                    ->hint(Yii::t('app','请选择应该使用哪一组模板来生成代码。'))
+                    ->label(Yii::t('app','代码模板'))
                     ->dropDownList($templates) ?>
                 <div class="form-group">
-                    <?= Html::submitButton('Preview', ['name' => 'preview', 'class' => 'btn btn-primary']) ?>
+                    <?= Html::submitButton(Yii::t('app','预览'), ['name' => 'preview', 'class' => 'btn btn-primary']) ?>
 
                     <?php if (isset($files)): ?>
-                        <?= Html::submitButton('Generate', ['name' => 'generate', 'class' => 'btn btn-success']) ?>
+                        <?= Html::submitButton(Yii::t('app','生成'), ['name' => 'generate', 'class' => 'btn btn-success']) ?>
                     <?php endif; ?>
                 </div>
             </div>

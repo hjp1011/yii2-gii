@@ -92,8 +92,8 @@ abstract class Generator extends Model
     public function attributeLabels()
     {
         return [
-            'enableI18N' => 'Enable I18N',
-            'messageCategory' => 'Message Category',
+            'enableI18N' => Yii::t('app','开启I18N'),
+            'messageCategory' => Yii::t('app','信息类别'),
         ];
     }
 
@@ -129,9 +129,8 @@ abstract class Generator extends Model
     public function hints()
     {
         return [
-            'enableI18N' => 'This indicates whether the generator should generate strings using <code>Yii::t()</code> method.
-                Set this to <code>true</code> if you are planning to make your application translatable.',
-            'messageCategory' => 'This is the category used by <code>Yii::t()</code> in case you enable I18N.',
+            'enableI18N' => Yii::t('app','这表明生成器是否应该使用<code>Yii::t()</code>方法生成字符串。如果您计划使您的应用程序可翻译，则将此设置为<code>true</code>。'),
+            'messageCategory' => Yii::t('app','这是<code>Yii::t()</code>在启用I18N时使用的类别。'),
         ];
     }
 

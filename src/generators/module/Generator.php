@@ -32,7 +32,7 @@ class Generator extends \yiiframe\gii\Generator
      */
     public function getName()
     {
-        return 'Module Generator';
+        return Yii::t('app','模块生成器');
     }
 
     /**
@@ -40,7 +40,7 @@ class Generator extends \yiiframe\gii\Generator
      */
     public function getDescription()
     {
-        return 'This generator helps you to generate the skeleton code needed by a Yii module.';
+        return Yii::t('app','这个生成器可以帮助您生成Yii模块所需的框架代码。');
     }
 
     /**
@@ -63,8 +63,8 @@ class Generator extends \yiiframe\gii\Generator
     public function attributeLabels()
     {
         return [
-            'moduleID' => 'Module ID',
-            'moduleClass' => 'Module Class',
+            'moduleID' => Yii::t('app','模块ID'),
+            'moduleClass' => Yii::t('app','模块类'),
         ];
     }
 
@@ -74,8 +74,8 @@ class Generator extends \yiiframe\gii\Generator
     public function hints()
     {
         return [
-            'moduleID' => 'This refers to the ID of the module, e.g., <code>admin</code>.',
-            'moduleClass' => 'This is the fully qualified class name of the module, e.g., <code>app\modules\admin\Module</code>.',
+            'moduleID' => Yii::t('app','这是指模块的ID，例如，<code>admin</code>。'),
+            'moduleClass' => Yii::t('app','这是模块的完全限定类名，例如:<code>app\modules\admin\module</code>。'),
         ];
     }
 

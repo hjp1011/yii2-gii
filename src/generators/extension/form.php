@@ -5,9 +5,9 @@
 
 ?>
 <div class="alert alert-info">
-    Please read the
+    <?=Yii::t('app','请细阅')?>
     <?= \yii\helpers\Html::a('Extension Guidelines', 'http://www.yiiframework.com/doc-2.0/guide-structure-extensions.html', ['target'=>'new']) ?>
-    before creating an extension.
+    <?=Yii::t('app','在创建扩展之前。')?>
 </div>
 <div class="module-form">
 <?php

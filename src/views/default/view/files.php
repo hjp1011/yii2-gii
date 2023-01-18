@@ -11,7 +11,7 @@ use yii\helpers\Html;
 
 ?>
 <div class="default-view-files">
-    <p>Click on the above <code>Generate</code> button to generate the files selected below:</p>
+    <p><?=Yii::t('app','点击上面的<code>生成</code>按钮，生成下面所选的文件:')?></p>
 
     <div class="row form-group">
         <div class="col-6">
@@ -20,13 +20,13 @@ use yii\helpers\Html;
         <div class="col-6 text-right">
             <div id="action-toggle" class="btn-group btn-group-xs">
                 <label class="btn btn-success active" title="Filter files that are created">
-                    <input type="checkbox" value="<?= CodeFile::OP_CREATE ?>" checked> Create
+                    <input type="checkbox" value="<?= CodeFile::OP_CREATE ?>" checked> <?=Yii::t('app','创建')?>
                 </label>
                 <label class="btn btn-outline-secondary active" title="Filter files that are unchanged.">
-                    <input type="checkbox" value="<?= CodeFile::OP_SKIP ?>" checked> Unchanged
+                    <input type="checkbox" value="<?= CodeFile::OP_SKIP ?>" checked> <?=Yii::t('app','不变')?>
                 </label>
                 <label class="btn btn-warning active" title="Filter files that are overwritten">
-                    <input type="checkbox" value="<?= CodeFile::OP_OVERWRITE ?>" checked> Overwrite
+                    <input type="checkbox" value="<?= CodeFile::OP_OVERWRITE ?>" checked> <?=Yii::t('app','覆盖')?>
                 </label>
             </div>
         </div>
@@ -35,8 +35,8 @@ use yii\helpers\Html;
     <table class="table table-bordered table-striped table-sm">
         <thead>
             <tr>
-                <th class="file">Code File</th>
-                <th class="action">Action</th>
+                <th class="file"><?=Yii::t('app','代码文件')?></th>
+                <th class="action"><?=Yii::t('app','动作')?></th>
                 <?php
                 $fileChangeExists = false;
                 foreach ($files as $file) {

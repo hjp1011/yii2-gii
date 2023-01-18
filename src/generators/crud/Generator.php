@@ -58,7 +58,7 @@ class Generator extends \yiiframe\gii\Generator
      */
     public function getName()
     {
-        return 'CRUD Generator';
+        return Yii::t('app','增删查改生成器');
     }
 
     /**
@@ -66,8 +66,7 @@ class Generator extends \yiiframe\gii\Generator
      */
     public function getDescription()
     {
-        return 'This generator generates a controller and views that implement CRUD (Create, Read, Update, Delete)
-            operations for the specified data model.';
+        return Yii::t('app','该生成器生成控制器和视图，为指定的数据模型实现CRUD(创建、读取、更新、删除)操作。');
     }
 
     /**
@@ -99,13 +98,13 @@ class Generator extends \yiiframe\gii\Generator
     public function attributeLabels()
     {
         return array_merge(parent::attributeLabels(), [
-            'modelClass' => 'Model Class',
-            'controllerClass' => 'Controller Class',
-            'viewPath' => 'View Path',
-            'baseControllerClass' => 'Base Controller Class',
-            'indexWidgetType' => 'Widget Used in Index Page',
-            'searchModelClass' => 'Search Model Class',
-            'enablePjax' => 'Enable Pjax',
+            'modelClass' => Yii::t('app','模型类'),
+            'controllerClass' => Yii::t('app','控制器类'),
+            'viewPath' => Yii::t('app','视图路径'),
+            'baseControllerClass' => Yii::t('app','基控制器类'),
+            'indexWidgetType' => Yii::t('app','小部件类型'),
+            'searchModelClass' => Yii::t('app','Search模型类'),
+            'enablePjax' => Yii::t('app','开启Pjax'),
         ]);
     }
 
@@ -115,24 +114,13 @@ class Generator extends \yiiframe\gii\Generator
     public function hints()
     {
         return array_merge(parent::hints(), [
-            'modelClass' => 'This is the ActiveRecord class associated with the table that CRUD will be built upon.
-                You should provide a fully qualified class name, e.g., <code>app\models\Post</code>.',
-            'controllerClass' => 'This is the name of the controller class to be generated. You should
-                provide a fully qualified namespaced class (e.g. <code>app\controllers\PostController</code>),
-                and class name should be in CamelCase with an uppercase first letter. Make sure the class
-                is using the same namespace as specified by your application\'s controllerNamespace property.',
-            'viewPath' => 'Specify the directory for storing the view scripts for the controller. You may use path alias here, e.g.,
-                <code>/var/www/basic/controllers/views/post</code>, <code>@app/views/post</code>. If not set, it will default
-                to <code>@app/views/ControllerID</code>',
-            'baseControllerClass' => 'This is the class that the new CRUD controller class will extend from.
-                You should provide a fully qualified class name, e.g., <code>yii\web\Controller</code>.',
-            'indexWidgetType' => 'This is the widget type to be used in the index page to display list of the models.
-                You may choose either <code>GridView</code> or <code>ListView</code>',
-            'searchModelClass' => 'This is the name of the search model class to be generated. You should provide a fully
-                qualified namespaced class name, e.g., <code>app\models\PostSearch</code>.',
-            'enablePjax' => 'This indicates whether the generator should wrap the <code>GridView</code> or <code>ListView</code>
-                widget on the index page with <code>yii\widgets\Pjax</code> widget. Set this to <code>true</code> if you want to get
-                sorting, filtering and pagination without page refreshing.',
+            'modelClass' => Yii::t('app','这是一个ActiveRecord类，与CRUD将要构建的表相关联。你应该提供一个完全限定的类名，例如，<code>app\models\Post</code>。'),
+            'controllerClass' => Yii::t('app','这是要生成的控制器类的名称。你应该提供一个完全限定的命名空间类(例如<code>app\controllers\PostController</code>)，并且类名应采用驼峰式，首字母大写。确保类使用的名称与应用程序的controllerNamespace属性指定的名称空间相同。'),
+            'viewPath' => Yii::t('app','指定存储控制器视图脚本的目录。您可以在这里使用路径别名，例如，<code>/var/www/basic/controllers/views/post</code>,<code>@app/views/post</code>。如果未设置，将默认设置<code>@app/views/ControllerID</code>'),
+            'baseControllerClass' => Yii::t('app','这是新的CRUD控制器类将从其扩展的类。你应该提供一个完全限定的类名，例如，<code>yii\web\Controller</code>。'),
+            'indexWidgetType' => Yii::t('app','这是在索引页中用于显示模型列表的小部件类型。您可以选择<code>GridView</code>或<code>ListView</code>'),
+            'searchModelClass' => Yii::t('app','这是要生成的搜索模型类的名称。你应该提供一个完全限定的命名空间类名，例如，<code>app\models\PostSearch</code>。'),
+            'enablePjax' => Yii::t('app','这表明生成器是否应该在索引页上用<code>yii\widgets\Pjax</code>小部件包装<code>GridView</code>或<code>ListView</code>小部件。如果您想在不刷新页面的情况下获得排序、过滤和分页，则将此设置为<code>true</code>。'),
         ]);
     }
 

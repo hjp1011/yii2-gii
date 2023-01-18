@@ -40,7 +40,7 @@ class Generator extends \yiiframe\gii\Generator
      */
     public function getName()
     {
-        return 'Extension Generator';
+        return Yii::t('app','扩展生成器');
     }
 
     /**
@@ -48,7 +48,7 @@ class Generator extends \yiiframe\gii\Generator
      */
     public function getDescription()
     {
-        return 'This generator helps you to generate the files needed by a Yii extension.';
+        return Yii::t('app','这个生成器可以帮助您生成Yii扩展所需的文件。');
     }
 
     /**
@@ -99,9 +99,19 @@ class Generator extends \yiiframe\gii\Generator
     public function attributeLabels()
     {
         return [
-            'vendorName'  => 'Vendor Name',
-            'packageName' => 'Package Name',
-            'license'     => 'License',
+            'vendorName'  => Yii::t('app','供应商名称'),
+            'packageName' => Yii::t('app','包名'),
+            'license'     => Yii::t('app','许可证'),
+            'namespace'     => Yii::t('app','名称空间'),
+            'type'     => Yii::t('app','类型'),
+            'keywords'     => Yii::t('app','关键字'),
+            'title'     => Yii::t('app','标题'),
+            'description'     => Yii::t('app','描述'),
+            'authorName'     => Yii::t('app','作者名'),
+            'authorEmail'     => Yii::t('app','作者邮箱'),
+            'outputPath'     => Yii::t('app','输出路径'),
+
+
         ];
     }
 
@@ -111,13 +121,13 @@ class Generator extends \yiiframe\gii\Generator
     public function hints()
     {
         return [
-            'vendorName'  => 'This refers to the name of the publisher, your GitHub user name is usually a good choice, eg. <code>myself</code>.',
-            'packageName' => 'This is the name of the extension on packagist, eg. <code>yii2-foobar</code>.',
-            'namespace'   => 'PSR-4, eg. <code>myself\foobar\</code> This will be added to your autoloading by composer. Do not use yii, yii2 or yiisoft in the namespace.',
-            'keywords'    => 'Comma separated keywords for this extension.',
-            'outputPath'  => 'The temporary location of the generated files.',
-            'title'       => 'A more descriptive name of your application for the README file.',
-            'description' => 'A sentence or subline describing the main purpose of the extension.',
+            'vendorName'  => Yii::t('app','这指的是出版商的名字，你的GitHub用户名通常是一个很好的选择，例如<code>myself</code>'),
+            'packageName' => Yii::t('app','这是packagist上的扩展名，例如。<code>yii2-foobar ></code>'),
+            'namespace'   => Yii::t('app','PSR-4,例如。<code>myself\foobar\</code>这将被composer添加到您的自动加载。不能在命名空间中使用“yii”、“yii2”和“yiisoft”。'),
+            'keywords'    => Yii::t('app','此扩展的关键字用逗号分隔。'),
+            'outputPath'  => Yii::t('app','生成文件的临时位置。'),
+            'title'       => Yii::t('app','用于README文件的应用程序的更具描述性的名称。'),
+            'description' => Yii::t('app','描述扩展的主要目的的句子或副句。'),
         ];
     }
 

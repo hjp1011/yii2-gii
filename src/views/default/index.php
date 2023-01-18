@@ -6,12 +6,12 @@ use yii\helpers\Html;
 /* @var $content string */
 
 $generators = Yii::$app->controller->module->generators;
-$this->title = 'Welcome to Gii';
+$this->title = Yii::t('app','欢迎来到Gii');
 ?>
 <div class="default-index">
-    <h1 class="border-bottom pb-3 mb-3">Welcome to Gii <small class="text-muted">a magical tool that can write code for you</small></h1>
+    <h1 class="border-bottom pb-3 mb-3"><?=Yii::t('app','欢迎来到Gii');?> <small class="text-muted"><?=Yii::t('app','一个可以为您编写代码的神奇工具');?></small></h1>
 
-    <p class="lead mb-5">Start the fun with the following code generators:</p>
+    <p class="lead mb-5"><?=Yii::t('app','从下面的代码生成器开始享受乐趣');?>:</p>
 
     <div class="row">
         <?php foreach ($generators as $id => $generator): ?>
