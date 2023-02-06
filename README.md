@@ -1,17 +1,7 @@
-<p align="center">
-    <a href="https://github.com/hjp1011" target="_blank">
-        <img src="https://avatars0.githubusercontent.com/u/993323" height="100px">
-    </a>
-    <h1 align="center">Gii Extension for Yii 2</h1>
-    <br>
-</p>
-
-This extension provides a Web-based code generator, called Gii, for [Yii framework 2.0] applications.
+Yii2-gii extension
+=======================
+The Gii extension for the Yii framework,This extension provides a Web-based code generator, called Gii, for [Yii framework 2.0] applications.
 You can use Gii to quickly generate models, forms, modules, CRUD, etc.
-
-For license information check the [LICENSE](LICENSE.md)-file.
-
-Documentation is at [docs/guide/README.md](docs/guide/README.md).
 
 [![Latest Stable Version](http://poser.pugx.org/hjp1011/yii2-gii/v)](https://packagist.org/packages/hjp1011/yii2-gii) [![Total Downloads](http://poser.pugx.org/hjp1011/yii2-gii/downloads)](https://packagist.org/packages/hjp1011/yii2-gii) [![Latest Unstable Version](http://poser.pugx.org/hjp1011/yii2-gii/v/unstable)](https://packagist.org/packages/hjp1011/yii2-gii) [![License](http://poser.pugx.org/hjp1011/yii2-gii/license)](https://packagist.org/packages/hjp1011/yii2-gii) [![PHP Version Require](http://poser.pugx.org/hjp1011/yii2-gii/require/php)](https://packagist.org/packages/hjp1011/yii2-gii)
 
